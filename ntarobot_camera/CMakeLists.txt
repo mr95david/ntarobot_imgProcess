@@ -30,11 +30,11 @@ install(
 )
 
 # Orden de creacion de ejecutables de nodos python
-# install(PROGRAMS
-#   ${PROJECT_NAME}/simple_controller.py
-#   ${PROJECT_NAME}/noisy_controller.py
-#   DESTINATION lib/${PROJECT_NAME}
-# )
+install(PROGRAMS
+  ${PROJECT_NAME}/camera_node.py
+  ${PROJECT_NAME}/camara_simple.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
